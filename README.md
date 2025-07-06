@@ -22,11 +22,11 @@ A full-stack CRUD app using MongoDB, Express, React, and Node.js.
 | Database | MongoDB (with Mongoose) |
 | Tools    | Git, GitHub, VS Code    |
 
-## Project Structure
+# Project Structure
 - `backend/` — Node.js + Express + MongoDB
 - `frontend/` — React.js
 
-## Setup
+# Setup
 1. Run `npm install` in both `backend` and `frontend`
 2. Start backend: `npm run dev`
 3. Start frontend: `npm run start` in `frontend` folder
