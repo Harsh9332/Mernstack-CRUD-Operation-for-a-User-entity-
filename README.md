@@ -4,11 +4,15 @@ A full-stack CRUD app using MongoDB, Express, React, and Node.js.
 
 ✅ Key Features
 
-📥 Add new users with Name, Email, and DOB
-📋 View all users in a table/list format
-✏️ Edit existing user information
-🗑️ Delete users
-📅 Automatically calculate and display Age from DOB
+- 📥 Add new users with Name, Email, and DOB
+
+- 📋 View all users in a table/list format
+
+- ✏️ Edit existing user information
+
+- 🗑️ Delete users
+
+- 📅 Automatically calculate and display Age from DOB
 
 # Folder Structure Overview
 | Layer    | Technology              |
