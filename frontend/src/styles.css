@@ -1,0 +1,307 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+
+.App {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.app-footer {
+  flex-shrink: 0;
+}
+
+.form-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.button {
+  margin: 20px auto;
+  display: block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: left;
+}
+
+.table td.actions {
+  white-space: nowrap;
+}
+
+.table td.actions button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.table td.actions button:hover {
+  background-color: #1e7e34;
+}
+
+.table td.actions button:last-child {
+  background-color: #dc3545;
+}
+
+.table td.actions button:last-child:hover {
+  background-color: #bd2130;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.form-container {
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="date"] {
+  width: 100%;
+  padding: 8px 12px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-group input[type="date"]:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.form-buttons {
+  margin-top: 10px;
+}
+
+.form-buttons button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.form-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.form-buttons button.cancel-button {
+  background-color: #6c757d;
+}
+
+.form-buttons button.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* New styles for header, footer, and home page */
+
+.app-header {
+  background-color: #343a40;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.app-header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.app-header nav ul li {
+  margin-left: 20px;
+}
+
+.add-user-button {
+  margin-left: 20px;
+  padding: 8px 16px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-user-button:hover {
+  background-color: #0056b3;
+}
+
+.app-header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.app-header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.app-footer {
+  background-color: #f8f9fa;
+  color: #6c757d;
+  text-align: center;
+  padding: 15px 20px;
+  margin-top: 40px;
+  border-top: 1px solid #dee2e6;
+}
+
+.home-page {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.home-page h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.home-page p {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Responsive styles for laptop and smaller screens */
+@media (max-width: 1024px) {
+  .App {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .app-header h1 {
+    font-size: 20px;
+  }
+
+  .app-header nav ul li {
+    margin-left: 10px;
+  }
+
+  .home-page h1 {
+    font-size: 28px;
+  }
+
+  .home-page p {
+    font-size: 16px;
+  }
+}
+
+/* Additional styles for better fit on laptop screens */
+@media (max-width: 1366px) {
+  .App {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .app-header h1 {
+    font-size: 22px;
+  }
+
+  .app-header nav ul li {
+    margin-left: 15px;
+  }
+
+  .home-page h1 {
+    font-size: 30px;
+  }
+
+  .home-page p {
+    font-size: 17px;
+  }
+}
