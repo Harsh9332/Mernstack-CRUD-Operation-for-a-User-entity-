@@ -2,10 +2,16 @@
 
 A full-stack CRUD app using MongoDB, Express, React, and Node.js.
 
-## Features
-- Add, edit, delete users
-- View user list
-- Age calculated from DOB
+✅ Key Features
+📥 Add new users with Name, Email, and DOB
+
+📋 View all users in a table/list format
+
+✏️ Edit existing user information
+
+🗑️ Delete users
+
+📅 Automatically calculate and display Age from DOB
 
 ## Project Structure
 - `backend/` — Node.js + Express + MongoDB
