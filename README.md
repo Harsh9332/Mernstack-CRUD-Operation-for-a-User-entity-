@@ -1,4 +1,4 @@
-# Demo MERN Project
+# MERN Project
 
 A full-stack CRUD app using MongoDB, Express, React, and Node.js.
 
